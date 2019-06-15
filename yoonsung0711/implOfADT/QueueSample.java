@@ -2,7 +2,7 @@ public class QueueSample{
 	Node first;
 	Node last;
 	
-	public void add(Node newNode){
+	void add(Node newNode){
 		if (this.last != null){
 			this.last.next = newNode;
 		} 
@@ -14,7 +14,7 @@ public class QueueSample{
 		
 	}
 	
-	public Node pop(){
+	Node pop(){
 		Node tmp = this.first;
 		this.first = this.first.next;
 		return tmp;
@@ -31,6 +31,7 @@ public class QueueSample{
 		System.out.println(q.pop());
 		System.out.println(q.pop());
 		System.out.println(q.pop());
+		
 	}
 }
 
@@ -38,7 +39,7 @@ class Node{
 	int number;
 	Node next;
 	
-	public Node(int number){
+	Node(int number){
 		this.number = number;
 	}
 	
