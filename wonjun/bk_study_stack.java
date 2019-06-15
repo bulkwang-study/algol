@@ -3,7 +3,7 @@ package bj;
 import java.util.ArrayList;
 import java.util.List;
 
-class Stack{
+class Stack {
 	List stack;
 	
 	Stack(){
@@ -14,16 +14,17 @@ class Stack{
 		stack.add(num);
 	}
 	
-	int pop() {
+	int pop() throws Exception{
+		
 		if(stack.size() == 0) {
-			System.out.println("Stack is empty!");
-			return -999;
+			throw new Exception();
 		}else {
 			int lastIndex = stack.size()-1;
 			int lastNum = (int) stack.get(lastIndex);
 			stack.remove(lastIndex);
 			return lastNum;
 		}
+
 	}
 	
 	void print(List stackTest) {
@@ -32,7 +33,7 @@ class Stack{
 }
 
 public class bk_study_stack {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Stack stackTest = new Stack();
 		stackTest.push(1);
 		stackTest.push(2);
