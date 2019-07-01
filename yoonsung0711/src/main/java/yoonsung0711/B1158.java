@@ -1,3 +1,5 @@
+package yoonsung0711;
+
 public class B1158{
 	public static void main(String[] args) {
 		Node startNode; 

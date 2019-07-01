@@ -1,4 +1,6 @@
-public class QueueSample{
+package yoonsung0711.implOfADT;
+
+public class QueueSample {
 	Node first;
 	Node last;
 	

@@ -1,4 +1,6 @@
-public class StackSample{
+package yoonsung0711.implOfADT;
+
+public class StackSample {
 	Node last;
 
 	public void add(Node newNode){
